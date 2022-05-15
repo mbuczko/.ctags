@@ -3,13 +3,14 @@
 --kinddef-clojure=t,test,unit tests
 --kinddef-clojure=s,spec,type specs
 --kinddef-clojure=m,macro,macros
---kinddef-clojure=u,struct,structs
+--kinddef-clojure=c,struct,structs
 --kinddef-clojure=r,record,records
 --kinddef-clojure=p,protocol,protocols
 --kinddef-clojure=d,def,definitions
---kinddef-clojure=c,const,constants
+--kinddef-clojure=x,const,constants
 
---regex-clojure=/\(def[ \t]+([-[:alnum:]+!_:\/.?]+)/\1/u/
+--regex-clojure=/\(def[ \t]+([-[:alnum:]+!_:\/.?]+)/\1/d/
+--regex-clojure=/\(def[ \t]+\^:const[ \t]+([-[:alnum:]+!_:\/.?]+)/\1/d/
 --regex-clojure=/\(defn\-[ \t]+([-[:alnum:]+!_:\/.?]+)/\1/d/
 --regex-clojure=/\(defonce[ \t]+([-[:alnum:]+!_:\/.?]+)/\1/d/
 --regex-clojure=/\(defstruct[ \t]+([-[:alnum:]+!_:\/.?]+)/\1/d/
