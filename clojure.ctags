@@ -1,0 +1,26 @@
+--kinddef-clojure=b,subscription,re-frame subscriptions
+--kinddef-clojure=e,event,re-frame events
+--kinddef-clojure=t,test,unit tests
+--kinddef-clojure=s,spec,type specs
+--kinddef-clojure=m,macro,macros
+--kinddef-clojure=u,struct,structs
+--kinddef-clojure=r,record,records
+--kinddef-clojure=p,protocol,protocols
+--kinddef-clojure=d,def,definitions
+--kinddef-clojure=c,const,constants
+
+--regex-clojure=/\(def[ \t]+([-[:alnum:]*+!_:\/.?]+)/\1/u/
+--regex-clojure=/\(defn\-[ \t]+([-[:alnum:]*+!_:\/.?]+)/\1/d/
+--regex-clojure=/\(defonce[ \t]+([-[:alnum:]*+!_:\/.?]+)/\1/d/
+--regex-clojure=/\(defstruct[ \t]+([-[:alnum:]*+!_:\/.?]+)/\1/d/
+--regex-clojure=/\(defprotocol[ \t]+([-[:alnum:]*+!_:\/.?]+)/\1/p/
+--regex-clojure=/\(defrecord[ \t]+([-[:alnum:]*+!_:\/.?]+)/\1/r/
+--regex-clojure=/\(defstate[ \t]+([-[:alnum:]*+!_:\/.?]+)/\1/d/
+--regex-clojure=/\(deftest[ \t]+([-[:alnum:]*+!_:\/.?]+)/\1/t/
+--regex-clojure=/\(defmacro[ \t]+([-[:alnum:]*+!_:\/.?]+)/\1/m/
+--regex-clojure=/\(defroutes[ \t]+([-[:alnum:]*+!_:\/.?]+)/\1/d/
+--regex-clojure=/\([a-z]*\/?reg-sub[ \t]+([-[:alnum:]*:\/]+)/\1/b/
+--regex-clojure=/\([a-z]*\/?reg-event-(db|fx)[ \t]+::?[:alnum:]+)/\1/e/
+--regex-clojure=/\(defn-spec[ \t]+([-[:alnum:]*+!_:\/.?]+)/\1/f/
+--regex-clojure=/\(s\/def[ \t]+([-[:alnum:]*+!_:\/.?]+)/\1/s/
+--regex-clojure=/\(fact[ \t]+\"([^\"]+)\"/\1/t/
