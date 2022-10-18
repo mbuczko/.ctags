@@ -1,0 +1,3 @@
+--kinddef-sql=q,query,queries
+
+--regex-sql=/\-\-[ \t]+:?(name[\ \t]+)([[:alnum:]_-]+)/\1/q/
