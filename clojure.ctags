@@ -10,7 +10,7 @@
 --kinddef-clojure=x,const,constants
 
 --regex-clojure=/\(def[ \t]+([-[:alnum:]+!_:\/.?]+)/\1/d/
---regex-clojure=/\(def[ \t]+\^:const[ \t]+([-[:alnum:]+!_:\/.?]+)/\1/d/
+--regex-clojure=/\(def[ \t]+\^:const[ \t]+([-[:alnum:]+!_:\/.?]+)/\1/x/
 --regex-clojure=/\(defn\-[ \t]+([-[:alnum:]+!_:\/.?]+)/\1/d/
 --regex-clojure=/\(defonce[ \t]+([-[:alnum:]+!_:\/.?]+)/\1/d/
 --regex-clojure=/\(defstruct[ \t]+([-[:alnum:]+!_:\/.?]+)/\1/d/
