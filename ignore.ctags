@@ -36,3 +36,4 @@
 --exclude=vendors
 --exclude=externs.js
 --exclude=preload.js
+--exclude=package-lock.json
